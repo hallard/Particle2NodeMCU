@@ -42,4 +42,4 @@ See news and other projects on my [blog][2]
  
 [2]: https://hallard.me
 [3]: https://github.com/thibdct/programmateur-fil-pilote-wifi/tree/master/Logiciel/remora
-[4]: https://oshpark.com/projects/wUBgoDUV
+[4]: https://oshpark.com/shared_projects/ot8OvWdM
