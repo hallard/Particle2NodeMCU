@@ -2,6 +2,12 @@
 Thumbs.db
 ehthumbs.db
 
+*.db
+*.b#?
+*.s#?
+eagle.epf
+.gitignore
+
 # Folder config file
 Desktop.ini
 
