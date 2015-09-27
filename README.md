@@ -32,7 +32,8 @@ Look at the schematics for more informations.
 <img src="https://raw.githubusercontent.com/hallard/Particle2NodeMCU/master/Particle2NodeMCU-top.png" alt="Top" width="40%" height="40%">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/Particle2NodeMCU/master/Particle2NodeMCU-bottom.png" alt="Bottom" width="40%" height="40%">&nbsp; 
 
-If you have old version V1.0 PCB and a RFM69 attached, here the fix, cut line in red and solder wire on green line.
+If you have old version V1.0 PCB and a RFM69 attached, here the fix, cut line in red and solder wire on green line.   
+
 <img src="https://raw.githubusercontent.com/hallard/Particle2NodeMCU/master/Particle2NodeMCU-top-fix-gpio.png" alt="Top" width="30%" height="30%">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/Particle2NodeMCU/master/Particle2NodeMCU-bottom-fix-gpio.png" alt="Bottom" width="30%" height="30%">&nbsp; 
 
