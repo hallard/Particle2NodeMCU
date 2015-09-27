@@ -5846,7 +5846,7 @@ DIN A4, landscape with location and doc. field</description>
 <sheets>
 <sheet>
 <plain>
-<text x="162.56" y="59.69" size="1.778" layer="94">IRQ RFM69</text>
+<text x="162.56" y="44.45" size="1.778" layer="94">IRQ RFM69</text>
 <text x="162.56" y="62.23" size="1.778" layer="94">FLASH</text>
 <text x="162.56" y="49.53" size="1.778" layer="94">GPIO12</text>
 <text x="162.56" y="64.77" size="1.778" layer="94">GPIO4</text>
@@ -5855,7 +5855,7 @@ DIN A4, landscape with location and doc. field</description>
 <text x="162.56" y="39.37" size="1.778" layer="94">TXD0</text>
 <text x="162.56" y="46.99" size="1.778" layer="94">GPIO13</text>
 <text x="162.56" y="52.07" size="1.778" layer="94">GPIO14</text>
-<text x="162.56" y="44.45" size="1.778" layer="94">GPIO15</text>
+<text x="162.56" y="59.69" size="1.778" layer="94">GPIO15</text>
 <text x="162.56" y="69.85" size="1.778" layer="94">LED/KEY</text>
 <text x="30.48" y="74.93" size="1.778" layer="94">NodeMCU Headers</text>
 <text x="63.5" y="63.754" size="1.778" layer="94">Tinfo</text>
@@ -5869,7 +5869,7 @@ DIN A4, landscape with location and doc. field</description>
 Adapter
 http://hallard.me/</text>
 <text x="180.34" y="-19.05" size="2.54" layer="94">(c) Charles-Henri Hallard</text>
-<text x="211.455" y="-34.29" size="2.54" layer="94">V1.0</text>
+<text x="211.455" y="-34.29" size="2.54" layer="94">V1.0a</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="88.9" y="50.8"/>
@@ -6045,15 +6045,15 @@ http://hallard.me/</text>
 </net>
 <net name="SS" class="0">
 <segment>
-<wire x1="161.29" y1="44.45" x2="153.67" y2="44.45" width="0.1524" layer="91"/>
-<label x="158.75" y="44.45" size="1.778" layer="95"/>
-<pinref part="JP3" gate="G$1" pin="11"/>
-<junction x="153.67" y="44.45"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="A2"/>
 <wire x1="71.12" y1="33.02" x2="60.96" y2="33.02" width="0.1524" layer="91"/>
 <label x="60.96" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="161.29" y1="59.69" x2="153.67" y2="59.69" width="0.1524" layer="91"/>
+<label x="154.94" y="59.69" size="1.778" layer="95"/>
+<pinref part="JP3" gate="G$1" pin="5"/>
+<junction x="153.67" y="59.69"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -6104,15 +6104,15 @@ http://hallard.me/</text>
 </net>
 <net name="GPIO2" class="0">
 <segment>
-<wire x1="161.29" y1="59.69" x2="153.67" y2="59.69" width="0.1524" layer="91"/>
-<label x="154.94" y="59.69" size="1.778" layer="95"/>
-<pinref part="JP3" gate="G$1" pin="5"/>
-<junction x="153.67" y="59.69"/>
-</segment>
-<segment>
 <pinref part="U$2" gate="G$1" pin="D2"/>
 <wire x1="106.68" y1="33.02" x2="114.3" y2="33.02" width="0.1524" layer="91"/>
 <label x="109.22" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="161.29" y1="44.45" x2="153.67" y2="44.45" width="0.1524" layer="91"/>
+<label x="154.94" y="44.45" size="1.778" layer="95"/>
+<pinref part="JP3" gate="G$1" pin="11"/>
+<junction x="153.67" y="44.45"/>
 </segment>
 </net>
 <net name="GPIO0" class="0">
