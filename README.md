@@ -16,7 +16,8 @@ Since ESP8266 has less pin than Particle boards, only "classic" have been connec
 I discovered a major issue with 1st design, in fact ESP8266 to boot correctly needs some pins at defined level, GPIO15 must be LOW and GPIO2 must be HIGH.
 Unfortunatlly with RFM69 connected as IRQ to GPIO2 and SS to GPIO15 it does not boot because RF69 pull it DIO IRQ to LOW, making GPIO2 LOW and ESP8266 not booting.
 The fix is to reverse the wiring, connect IRQ to GPIO15 and SS to GPIO2 (and do according changes in the code). 
-This page has been updated to reflect the changes and the PCB also, it's now V1.0a.
+This page has been updated to reflect the changes and the PCB also, it's now V1.0a.   
+
 Another issue is that it really just to fit board adapter on Remora if you have the big relay installed, it fits but it's really really close, so in version 1.0a, I just moved a little bit the adapter from the board relay.
 
 *Boards are still in progress, I did not fully tested them yet, I will update as soon has I got them in my hands. Use at your own risks*
