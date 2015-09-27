@@ -18,7 +18,7 @@ Unfortunatlly with RFM69 connected as IRQ to GPIO2 and SS to GPIO15 it does not 
 The fix is to reverse the wiring, connect IRQ to GPIO15 and SS to GPIO2 (and do according changes in the code). 
 This page has been updated to reflect the changes and the PCB also, it's now V1.0a.
 
-*Boards are still in progress, I did not tested them yet, I will update as soon has I got them in my hands. Use at your own risks*
+*Boards are still in progress, I did not fully tested them yet, I will update as soon has I got them in my hands. Use at your own risks*
 
 Detailed Description
 ====================
@@ -38,12 +38,12 @@ If you have old version V1.0 PCB and a RFM69 attached, here the fix, cut line in
 <img src="https://raw.githubusercontent.com/hallard/Particle2NodeMCU/master/Particle2NodeMCU-bottom-fix-gpio.png" alt="Bottom" width="30%" height="30%">&nbsp; 
 
 
-~~You can order the PCB of this board at [OSHPARK][4]~~ Old version, take care !!
+~~You can order the PCB of this board at [OSHPARK][4]~~ Old PCB version on this link, take care !!
 
 ### Assembled boards
 
-I'm currently waiting for boards from OSHPARK
-Boards arrived, I found one major issue with current wiring
+~~I'm currently waiting for boards from OSHPARK~~
+Boards arrived, still testing before ordering V1.0b boards/
 
 ##License
 
