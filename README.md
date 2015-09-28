@@ -13,12 +13,12 @@ Since ESP8266 has less pin than Particle boards, only "classic" have been connec
 - GPIO2 is used as Chip Select (SS) for RFM69
 - GPIO16 as free I/O (LED and KEY on NodeMCU)
 
-I discovered a major issue with 1st design, in fact ESP8266 to boot correctly needs some pins at defined level, GPIO15 must be LOW and GPIO2 must be HIGH.
-Unfortunatlly with RFM69 connected as IRQ to GPIO2 and SS to GPIO15 it does not boot because RF69 pull it DIO IRQ to LOW, making GPIO2 LOW and ESP8266 not booting.
-The fix is to reverse the wiring, connect IRQ to GPIO15 and SS to GPIO2 (and do according changes in the code). 
-This page has been updated to reflect the changes and the PCB also, it's now V1.0a.   
+I discovered some issue with 1st design, see below :
+- ESP8266 to boot correctly needs some pins at defined level, GPIO15 must be LOW and GPIO2 must be HIGH. Unfortunatlly with RFM69 connected as IRQ to GPIO2 and SS to GPIO15 it does not boot because RF69 pull it DIO IRQ to LOW, making GPIO2 LOW and ESP8266 not booting. The fix is to reverse the wiring, connect IRQ to GPIO15 and SS to GPIO2 (and do according changes in the code). 
+- Teleinfo had some issue due to NodeMCU USB/Serial onboard converter that was in conflict and was killing RX signal coming from optocoupler. To avoid this I've put 2 inverters to have a correct RX Teleinfo signal coming to EMP8266. No Risk because on board RX Signal of NodeMCU has a 470 Ohm resistor in serial of this line. To avoid this may be we could use a ESP8266 without any USB/Serial adapteur such as a Adafruit [Huzzah][5] or Olimex [ESP8266 Dev][6]
+- it really just to fit board adapter on Remora if you have the big relay installed, it fits but it's really really close, so in version 1.1, I just moved a little bit the adapter from the board relay.
 
-Another issue is that it really just to fit board adapter on Remora if you have the big relay installed, it fits but it's really really close, so in version 1.0a, I just moved a little bit the adapter from the board relay.
+This page has been updated to reflect the changes and the PCB also, it's now V1.1.   
 
 *Boards are still in progress, I did not fully tested them yet, I will update as soon has I got them in my hands. Use at your own risks*
 
@@ -45,7 +45,7 @@ If you have old version V1.0 PCB and a RFM69 attached, here the fix, cut line in
 ### Assembled boards
 
 ~~I'm currently waiting for boards from OSHPARK~~
-Boards arrived, still testing before ordering V1.0b boards/
+Boards arrived, still testing before ordering V1.1 boards/
 
 ##License
 
@@ -57,3 +57,5 @@ See news and other projects on my [blog][2]
 [2]: https://hallard.me
 [3]: https://github.com/thibdct/programmateur-fil-pilote-wifi/tree/master/Logiciel/remora
 [4]: https://oshpark.com/shared_projects/ot8OvWdM
+[5]: https://www.adafruit.com/product/2471
+[6]: https://www.olimex.com/Products/IoT/MOD-WIFI-ESP8266-DEV/
