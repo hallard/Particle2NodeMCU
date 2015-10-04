@@ -17,9 +17,9 @@ I discovered some issue with 1st design, see below :
 - ESP8266 to boot correctly needs some pins at defined level, GPIO15 must be LOW and GPIO2 must be HIGH. Unfortunatlly with RFM69 connected as IRQ to GPIO2 and SS to GPIO15 it does not boot because RF69 pull it DIO IRQ to LOW, making GPIO2 LOW and ESP8266 not booting. The fix is to reverse the wiring, connect IRQ to GPIO15 and SS to GPIO2 (and do according changes in the code). 
 - Teleinfo had some issue due to NodeMCU USB/Serial onboard converter that was in conflict and was killing RX signal coming from optocoupler. To avoid this I've put 2 inverters to have a correct RX Teleinfo signal coming to EMP8266. No Risk because on board RX Signal of NodeMCU has a 470 Ohm resistor in serial of this line. To avoid this may be we could use a ESP8266 without any USB/Serial adapteur such as a Adafruit [Huzzah][5] or Olimex [ESP8266 Dev][6]
 - it really just to fit board adapter on Remora if you have the big relay installed, it fits but it's really really close, so in version 1.1a, I just moved a little bit the adapter from the board relay.
-- to be able to handle future Remora PCB version I added the feature to enable/disable Téléinfo FET Staging (they will already be placed on Remora V1.3 PCB) using Jumper J1 & J2
+- to be able to handle future Remora PCB version I added the feature to enable/disable Téléinfo FET Staging (they will already be placed on Remora V1.3 PCB) using Jumper J1 & J2.
 
-This page has been updated to reflect the changes and the PCB also, it's now V1.1a.   
+This page has been updated to reflect the changes and the PCB also, it's now v1.1a.   
 
 *Boards are still in progress, I did not fully tested them yet, I will update as soon has I got them in my hands. Use at your own risks*
 
@@ -41,12 +41,12 @@ If you have old version V1.0 PCB and a RFM69 attached, here the fix, cut line in
 <img src="https://raw.githubusercontent.com/hallard/Particle2NodeMCU/master/Particle2NodeMCU-bottom-fix-gpio.png" alt="Bottom" width="30%" height="30%">&nbsp; 
 
 
-~~You can order the PCB of this board at [OSHPARK][4]~~ Old PCB version on this link, take care !!
+You can order the PCB of this board v1.1a at [OSHPARK][4]
 
 ### Assembled boards
 
 ~~I'm currently waiting for boards from OSHPARK~~
-Boards arrived, still testing before ordering V1.1a boards/
+Boards arrived, still testing before ordering V1.1a boards
 
 ##License
 
