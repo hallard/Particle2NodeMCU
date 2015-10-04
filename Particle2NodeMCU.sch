@@ -6803,11 +6803,12 @@ board
 </sheet>
 </sheets>
 <errors>
-<approved hash="204,1,106.68,68.58,U$2,3V3*,,,,"/>
-<approved hash="106,1,153.67,39.37,GPIO1,,,,,"/>
-<approved hash="113,1,77.47,0.592666,JP1,,,,,"/>
-<approved hash="113,1,34.9673,50.6053,JP2,,,,,"/>
-<approved hash="113,1,150.453,50.6053,JP3,,,,,"/>
+<approved hash="204,1,106.68,102.87,U$2,3V3*,,,,"/>
+<approved hash="106,1,153.67,73.66,GPIO1,,,,,"/>
+<approved hash="113,1,93.98,12.0227,JP1,,,,,"/>
+<approved hash="113,1,34.9673,84.8953,JP4,,,,,"/>
+<approved hash="113,1,150.453,84.8953,JP3,,,,,"/>
+<approved hash="113,1,93.98,26.0773,JP2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
