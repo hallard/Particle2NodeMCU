@@ -6521,12 +6521,6 @@ board
 <junction x="153.67" y="68.58"/>
 </segment>
 <segment>
-<wire x1="163.83" y1="91.44" x2="153.67" y2="91.44" width="0.1524" layer="91"/>
-<label x="157.48" y="91.44" size="1.778" layer="95"/>
-<pinref part="JP3" gate="G$1" pin="6"/>
-<junction x="153.67" y="91.44"/>
-</segment>
-<segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="19.05" x2="45.72" y2="21.59" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="3V3" pin="3V3"/>
